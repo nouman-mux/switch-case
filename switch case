@@ -1,0 +1,46 @@
+using System;
+
+
+namespace fIrstProj
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Console.WriteLine("enter first num ");
+            double a = double.Parse(Console.ReadLine());
+            Console.WriteLine("enter 2nd num");
+            double b = double.Parse(Console.ReadLine());
+            double result;
+            Console.WriteLine("Enter 1 to ADD\nEnter 2 to Sub\nEnter 3 to multiply\nEnter 4 to divide");
+            int num = int.Parse(Console.ReadLine());
+            switch (num)
+            {
+                case 1:
+                    result = a + b;
+                    Console.WriteLine("The sum is =: {0}",result);
+                    break;
+                case 2:
+                    result = a - b;
+                    Console.WriteLine("Subtraction is =: {0}", result);
+                    break;
+                case 3:
+                    result = a * b;
+                    Console.WriteLine("Multiplication is =: {0}", result);
+                    break;
+                case 4:
+                    result = a / b;
+                    Console.WriteLine("Division is =: {0}", result);
+                    break;
+                default:
+                    Console.WriteLine("You entered wrong number");
+                    break;
+            }
+
+
+            Console.Read();
+        }
+
+    }
+}
